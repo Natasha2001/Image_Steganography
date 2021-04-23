@@ -11,29 +11,29 @@ We have used Discrete Cosine Transform(DCT) method for hiding test message in a 
 
 #### Algorithm to embed text message:-
 Step 1: Read cover image and split into its RGB(red, green, blue) channels(the original DCT works on the cover image itself but in order to enhance security we have split it into RGB and then performed the operations).</br>
-Step 2: Read secret message and convert it in binary.(space,space)
-Step 3: The blue channel image is broken into 8×8 block of pixels(blue channel is an arbitary channel choosen, you may choose any).
-Step 4: Subtract 128 from each pixel in a block.
-Step 5: Apply DCT to each block.
-Step 6: Compress each block using quantization matrix.
-Step 7: Extract the first pixel of each block
-Step 8: Find the LSB of the first pixel
-Step 7: Replace each LSB with bit of secret message.
-Step 8: Expand each block using quantization matrix.
-Step 8: Apply inverse DCT to each block.
-Step 9: Add 128 from each pixel in a block.
-Step 10: Merge the blocks to form an image
-Step 11: Write stego image.
-Step 12: The stego image is then send to the other person
+Step 2: Read secret message and convert it in binary.</br>
+Step 3: The blue channel image is broken into 8×8 block of pixels(blue channel is an arbitary channel choosen, you may choose any).</br>
+Step 4: Subtract 128 from each pixel in a block.</br>
+Step 5: Apply DCT to each block.</br>
+Step 6: Compress each block using quantization matrix.</br>
+Step 7: Extract the first pixel of each block.</br>
+Step 8: Find the LSB of the first pixel.</br>
+Step 7: Replace each LSB with bit of secret message.</br>
+Step 8: Expand each block using quantization matrix.</br>
+Step 8: Apply inverse DCT to each block.</br>
+Step 9: Add 128 from each pixel in a block.</br>
+Step 10: Merge the blocks to form an image.</br>
+Step 11: Write stego image.</br>
+Step 12: The stego image is then send to the other person.</br>
 
 #### Algorithm to retrieve text message:-
-Step 1: Read stego image.
-Step 2: Stego image is split into its RGB(red, green, blue) channels
-Step 3: The blue channel is broken into 8×8 block of pixels.
-Step 4: Subtract 128 from each block of pixels.
-Step 5: Apply DCT to each block.
-Step 6: Compress each block through quantization table.
-Step 7: Find the LSB of the first pixel fo each block and store in a list
-Step 6: Merge the LSBs in group of 8 to find the binary code hidden
-Step 7: Convert each 8 bit into character.
+Step 1: Read stego image.</br>
+Step 2: Stego image is split into its RGB(red, green, blue) channels.</br>
+Step 3: The blue channel is broken into 8×8 block of pixels.</br>
+Step 4: Subtract 128 from each block of pixels.</br>
+Step 5: Apply DCT to each block.</br>
+Step 6: Compress each block through quantization table.</br>
+Step 7: Find the LSB of the first pixel fo each block and store in a list.</br>
+Step 8: Merge the LSBs in group of 8 to find the binary code hidden.</br>
+Step 9: Convert each 8 bit into character.</br>
 
