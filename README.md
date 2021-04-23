@@ -10,8 +10,8 @@ We have used more secure methods of image steganography:
 We have used Discrete Cosine Transform(DCT) method for hiding test message in a cover image.
 
 #### Algorithm to embed text message:-
-Step 1: Read cover image and split into its RGB(red, green, blue) channels(the original DCT works on the cover image itself but in order to enhance security we have split it into RGB and then performed the operations).(space)
-Step 2: Read secret message and convert it in binary.(space)
+Step 1: Read cover image and split into its RGB(red, green, blue) channels(the original DCT works on the cover image itself but in order to enhance security we have split it into RGB and then performed the operations).(space,space)
+Step 2: Read secret message and convert it in binary.(space,space)
 Step 3: The blue channel image is broken into 8×8 block of pixels(blue channel is an arbitary channel choosen, you may choose any).
 Step 4: Subtract 128 from each pixel in a block.
 Step 5: Apply DCT to each block.
