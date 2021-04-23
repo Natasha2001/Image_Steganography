@@ -84,6 +84,6 @@ Step 7: The RGB channel images are then merged to form the secret image.</br>
 
 ##### To retrieve the image:-
 * Change the directory to [Retrieve Image](https://github.com/Natasha2001/Image_Steganography/tree/main/DWT/RetrieveImage)
-* Save the stego image and cover image(generated in the [Embed  Directory](https://github.com/Natasha2001/Image_Steganography/tree/main/DWT/RetrieveImage)) in [Retrieve Image Directory](https://github.com/Natasha2001/Image_Steganography/tree/main/DWT/RetrieveImage)
+* Save the stego image and cover image(generated in the [Embed  Image Directory](https://github.com/Natasha2001/Image_Steganography/tree/main/DWT/RetrieveImage)) in [Retrieve Image Directory](https://github.com/Natasha2001/Image_Steganography/tree/main/DWT/RetrieveImage)
 * Run the notebook
 * The secret will be saved in the same directory
