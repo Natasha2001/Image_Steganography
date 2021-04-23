@@ -59,20 +59,20 @@ We have used Discrete Wavelet Transform(DWT) method for hiding a secret image in
 ##### Algorithm to embed the image:-
 Step 1: Read cover image and split it into its RGB(red, green, blue) channels(the original DWT works on the cover image itself but in order to enhance security we have split it into RGB and then performed the operations).</br>
 Step 2: Read the secret image and split it into its RGB(red, green, blue) channels(the original DWT works on the secret image itself but in order to enhance security we have split it into RGB and then performed the operations).</br>
-Step 3: Each channel of the cover image is then decomposed using DWT into 4 non-overlapping sub-bands.These are LL (approximation coefficients), LH (vertical details), HL (horizontal details) and HH(diagonal details). The division is done by employing Haar filters.
-Step 4: Secret image is also disintegrated into four sub-bands (LL, LH, HL, HH). 
-Step 5: Information contained in the LL sub-band of the secret image is embedded into LL bands of the cover image.
-Step 6: Inverse transformation (IDWT) is performed to merge the sub-bands.
-Step 7: The RGB channel images are then merged to form the stego image.
+Step 3: Each channel of the cover image is then decomposed using DWT into 4 non-overlapping sub-bands.These are LL (approximation coefficients), LH (vertical details), HL (horizontal details) and HH(diagonal details). The division is done by employing Haar filters.</br>
+Step 4: Secret image is also disintegrated into four sub-bands (LL, LH, HL, HH). </br>
+Step 5: Information contained in the LL sub-band of the secret image is embedded into LL bands of the cover image.</br>
+Step 6: Inverse transformation (IDWT) is performed to merge the sub-bands.</br>
+Step 7: The RGB channel images are then merged to form the stego image.</br>
 
 ##### Algorithm to retrieve the image:-
 Step 1: Read stego image and cover image.</br>
 Step 2: Stego and the cover image are split into its RGB(red, green, blue) channels.</br>
-Step 3: Each channel of the cover image is then decomposed using DWT into 4 non-overlapping sub-bands.These are LL (approximation coefficients), LH (vertical details), HL (horizontal details) and HH(diagonal details). The division is done by employing Haar filters.
-Step 4: Stego image is also disintegrated into four sub-bands (LL, LH, HL, HH). 
-Step 5: Information contained in the LL sub-band of stego image is retrieved using the cover image and stego image.
-Step 6: Inverse transformation (IDWT) is performed to merge the LL sub-band of stego image and LH,HL,HH sub-band of stego image.
-Step 7: The RGB channel images are then merged to form the secret image.
+Step 3: Each channel of the cover image is then decomposed using DWT into 4 non-overlapping sub-bands.These are LL (approximation coefficients), LH (vertical details), HL (horizontal details) and HH(diagonal details). The division is done by employing Haar filters.</br>
+Step 4: Stego image is also disintegrated into four sub-bands (LL, LH, HL, HH). </br>
+Step 5: Information contained in the LL sub-band of stego image is retrieved using the cover image and stego image.</br>
+Step 6: Inverse transformation (IDWT) is performed to merge the LL sub-band of stego image and LH,HL,HH sub-band of stego image.</br>
+Step 7: The RGB channel images are then merged to form the secret image.</br>
 
 ### Implementation
 ##### To embed the image:-
@@ -84,6 +84,6 @@ Step 7: The RGB channel images are then merged to form the secret image.
 
 ##### To retrieve the image:-
 * Change the directory to [Retrieve Image](https://github.com/Natasha2001/Image_Steganography/tree/main/DWT/RetrieveImage)
-* Save the stego image and cover image generated in the [Embed  Directory](https://github.com/Natasha2001/Image_Steganography/tree/main/DWT/RetrieveImage)
+* Save the stego image and cover image(generated in the [Embed  Directory](https://github.com/Natasha2001/Image_Steganography/tree/main/DWT/RetrieveImage)) in [Retrieve Image Directory](https://github.com/Natasha2001/Image_Steganography/tree/main/DWT/RetrieveImage)
 * Run the notebook
 * The secret will be saved in the same directory
